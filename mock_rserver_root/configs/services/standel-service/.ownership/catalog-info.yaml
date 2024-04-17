@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  tags:
+    - java
+    - map-my-trip
+  name: standel-service
+  annotations:
+    backstage.io/source-location: url:https://github.com/vikyathharekal/book-my-tickets/blob/main/mock_rserver_root/configs/services/standel-service
+    backstage.io/techdocs-ref: dir:.
+    jira/project-key: IDP
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
+spec:
+  type: service
+  system: movie
+  lifecycle: experimental
+  owner: Harness_Account_All_Users
